@@ -1,0 +1,132 @@
+:root {
+  --primary: #0d5bea;
+  --navy: #071837;
+  --text: #16213a;
+  --muted: #667085;
+  --border: #dfe5ee;
+  --danger: #c62828;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f9fc;
+  color: var(--text);
+}
+.form-section {
+  padding: 50px 20px;
+}
+.form-container {
+  width: min(100%, 700px);
+  margin-inline: auto;
+  padding: 36px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.eyebrow {
+  color: var(--primary);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+h1 {
+  color: var(--navy);
+  font-size: 2rem;
+  margin: 10px 0 0;
+}
+.form-header p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+h2 {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin: 0 0 4px;
+}
+.contact-form {
+  display: grid;
+  gap: 24px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.form-field {
+  display: grid;
+  gap: 6px;
+}
+label, legend {
+  font-size: .88rem;
+  font-weight: 650;
+  color: var(--navy);
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  border: none;
+  accent-color: var(--primary);
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(13,91,234,.12);
+}
+textarea { resize: vertical; min-height: 110px; }
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0;
+}
+.choice-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .9rem;
+}
+.choice input { accent-color: var(--primary); }
+.field-help {
+  color: var(--muted);
+  font-size: .8rem;
+}
+.required-mark { color: var(--danger); }
+.form-actions {
+  display: flex;
+  gap: 12px;
+}
+.button {
+  padding: 11px 22px;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button-primary {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+.button-secondary {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--navy);
+}
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
