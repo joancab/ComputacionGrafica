@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encuesta</title>
+<link rel="stylesheet" href="Style3.css">
+</head>
+<body>
+<div class="card">
+<h1>Encuesta rápida</h1>
+<form action="#" method="post">
+<fieldset>
+<legend>¿Cómo calificarías el servicio?</legend>
+<label class="choice"><input type="radio" name="calificacion" value="excelente" checked>Excelente</label>
+<label class="choice"><input type="radio" name="calificacion" value="bueno">Bueno</label>
+<label class="choice"><input type="radio" name="calificacion" value="regular">Regular</label>
+</fieldset>
+<fieldset>
+<legend>¿Qué aspectos te interesan?</legend>
+<label class="choice"><input type="checkbox" name="intereses" value="precio">Precio</label>
+<label class="choice"><input type="checkbox" name="intereses" value="atencion">Atención</label>
+<label class="choice"><input type="checkbox" name="intereses" value="rapidez">Rapidez</label>
+</fieldset>
+<div class="form-field">
+<label for="comentario">Comentario adicional</label>
+<textarea id="comentario" name="comentario" placeholder="Cuéntanos más..."></textarea>
+</div>
+<button type="submit">Enviar encuesta</button>
+</form>
+</div>
+</body>
+</html>
